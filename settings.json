@@ -1,0 +1,104 @@
+{
+  /**
+        Configura os recursos visuais da IDE
+    */
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "material-icon-theme",
+  "breadcrumbs.enabled": true,
+  "editor.renderLineHighlight": "gutter",
+  /**
+        Configura o a tela inicial de abertura da IDE
+    */
+  "workbench.startupEditor": "newUntitledFile",
+  /**
+        Configura tamanho e família da fonte
+    */
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 24,
+  "terminal.integrated.fontSize": 14,
+  "explorer.compactFolders": false,
+  /**
+        Formata arquivos quando o mesmo é salvo - CTRL + S
+    */
+  "editor.formatOnSave": true,
+  /**
+        Aplica uma linha vertical para lembrar de quebrar linha em códigos muito grandes
+    */
+  "editor.rulers": [80, 120],
+  /**
+        Define e configura o terminal que será integrado com a IDE
+    */
+  /**
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7-preview\\pwsh.exe",*/
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  /**
+        Configura a integração do GIT com a IDE
+    */
+  "git.autofetch": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  /**
+        Permite o uso do recurso EMMET em aplicações REACT
+    */
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  /**
+        Configura a integração do Eslint com a IDE
+    */
+  "eslint.packageManager": "yarn",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": false
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": false
+  },
+  /**
+        Associa arquivos e extensões para reconhecimento da IDE
+    */
+  "files.associations": {
+    ".sequelizerc": "javascript",
+    ".stylelintrc": "json",
+    ".prettierrc": "json"
+  },
+  "window.zoomLevel": 0,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.minimap.enabled": false,
+  /**
+        Configura a integração do Prettier com a IDE
+    */
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
